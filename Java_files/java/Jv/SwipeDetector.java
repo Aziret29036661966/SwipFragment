@@ -15,7 +15,6 @@ public abstract class SwipeDetector {
 
     private static final String TAG = "myLOG";
 
-    private boolean isStarted = false;
     private float startX = 0;
     private float startY = 0;
     private int minToachLen = 10;
@@ -32,7 +31,6 @@ public abstract class SwipeDetector {
             case MotionEvent.ACTION_DOWN:
                 startX = event.getX();
                 startY = event.getY();
-                isStarted = true;
                 break;
             case MotionEvent.ACTION_MOVE:
                 break;
@@ -43,11 +41,9 @@ public abstract class SwipeDetector {
                     onSwipeDetected(Direction.get(calcAngle(dx, dy)));
                 }
                 startY = startX = 0;
-                isStarted = false;
                 break;
             default:
                 startY = startX = 0;
-                isStarted = false;
                 Log.d(TAG, "onTouchEvent: Error");
         }
 
