@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SwipFragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="s_error_param">!SORRY!</string>
+    <string name="s_one_more_time">one more time!</string>
+    <string name="s_count">Пройдено квадратов:</string>
+    <string name="s_wins">Выйграно:</string>
+
+    <string name="s_block_Start">Найдите загаданный блок</string>
+    <string name="s_block_Next">Загадан другой</string>
+    <string name="s_block_Win">Сердечные поздравления!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
